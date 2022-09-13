@@ -13,7 +13,7 @@ namespace ConsoleApp1TestRepo.TestClass
 
             Coffee coffee = new Coffee(0.2, "Vanilla Iced Coffee", false);
 
-            coffeeList.addCoffee(coffee);
+            coffeeList.AddCoffee(coffee);
             Assert.AreEqual(coffeeList.GetCoffee(0), coffee);
         }
     }
