@@ -2,15 +2,22 @@
 {
     class Coffee
     {
-        private int volume;
+        private double volume;
         private string type;
         private bool hot;
 
-        public int Volume { get; set; }
-        public string Type { get; set; }
-        public bool Hot { get; set; }
+        public Coffee(double vol, string type, bool hot)
+        {
+            this.Volume = vol;
+            this.Type = type;
+            this.Hot = hot;
+        }
 
-        public string toString() { return $"{type} - {volume}L - Hot: {hot}"; }
+        public double Volume { get { return volume; } set { volume = value; } }
+        public string Type { get { return type; } set { type = value; } }
+        public bool Hot { get { return hot;} set { hot = value; } }
+
+        public override string ToString() { return $"{type} - {volume}L - Hot: {hot}"; }
 
     }
 }
