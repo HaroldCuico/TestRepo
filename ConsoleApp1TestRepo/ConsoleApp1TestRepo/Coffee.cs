@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleApp1TestRepo
+﻿namespace ConsoleApp1TestRepo
 {
     class Coffee
     {
