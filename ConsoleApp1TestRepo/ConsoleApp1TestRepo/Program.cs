@@ -7,6 +7,12 @@ namespace ConsoleApp1TestRepo
         static void Main(string[] args)
         {
             Console.WriteLine("Hello There People Good day Good Night!");
+            Console.WriteLine("Coffee Feature");
+            CoffeeList coffee = new CoffeeList();
+
+            coffee.addCoffee(new Coffee(0.5, "Strong Coffee", true));
+
+            coffee.displayAllCoffee();
         }
     }
 }
