@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp1TestRepo.Class;
 
 namespace ConsoleApp1TestRepo
 {
@@ -13,6 +14,11 @@ namespace ConsoleApp1TestRepo
             coffee.AddCoffee(new Coffee(0.5, "Strong Coffee", true));
 
             coffee.DisplayAllCoffee();
+
+
+           CustomerOrder customer = new CustomerOrder();
+            customer.Menu();
+            customer.GetOrder();
         }
     }
 }
