@@ -10,9 +10,9 @@ namespace ConsoleApp1TestRepo
             Console.WriteLine("Coffee Feature");
             CoffeeList coffee = new CoffeeList();
 
-            coffee.addCoffee(new Coffee(0.5, "Strong Coffee", true));
+            coffee.AddCoffee(new Coffee(0.5, "Strong Coffee", true));
 
-            coffee.displayAllCoffee();
+            coffee.DisplayAllCoffee();
         }
     }
 }
