@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp1TestRepo
 {
-    class Coffee
+    public class Coffee
     {
         private double volume;
         private string type;

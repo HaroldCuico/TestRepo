@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp1TestRepo
 {
-    class CoffeeList
+    public class CoffeeList
     {
         private Coffee[] coffees;
         private int pos;
@@ -13,17 +13,32 @@ namespace ConsoleApp1TestRepo
             coffees = new Coffee[10];
         }
 
-        public void addCoffee(Coffee coffee)
+        public void AddCoffee(Coffee coffee)
         {
             coffees[pos++] = coffee;
         }
 
-        public void displayAllCoffee()
+        public void DisplayAllCoffee()
         {
             foreach(Coffee coffee in coffees)
             {
                 Console.WriteLine(coffee);
             }
+        }
+
+        public Coffee GetCoffee(int index)
+        {
+            return coffees[index];
+        }
+
+        public bool DeleteCoffee(int index)
+        {
+            if (coffees[index] != null)
+            {
+                coffees[index--] = null;
+                return true;
+            }
+            return false;
         }
     }
 }
