@@ -6,9 +6,14 @@ namespace ConsoleApp1TestRepo.Class
 {
     public class CustomerOrder
     {
-        int Id { get; set; }
-        string Name { get; set; }
-        CoffeeList ListOfCoffee { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public CoffeeList ListOfCoffee { get; set; }
+
+        public void AddCoffee(Coffee c)
+        {
+            ListOfCoffee.addCoffee(c);  
+        }
 
         public void GetCoffeeList()
         {

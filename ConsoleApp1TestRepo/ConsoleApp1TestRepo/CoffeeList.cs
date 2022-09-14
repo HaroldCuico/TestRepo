@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp1TestRepo
 {
-    class CoffeeList
+    public class CoffeeList
     {
         private Coffee[] coffees;
         private int pos;
